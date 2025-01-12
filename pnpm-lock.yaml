@@ -10,10 +10,7 @@ importers:
     devDependencies:
       '@dzakh/rescript-ava':
         specifier: 2.3.0
-        version: 2.3.0(ava@5.2.0)(rescript@11.1.0)
-      '@rescript/core':
-        specifier: ^1.3.0
-        version: 1.3.0(rescript@11.1.0)
+        version: 2.3.0(ava@5.2.0)(rescript@12.0.0-alpha.7)
       ava:
         specifier: 5.2.0
         version: 5.2.0
@@ -24,8 +21,8 @@ importers:
         specifier: 7.12.0
         version: 7.12.0
       rescript:
-        specifier: 11.1.0
-        version: 11.1.0
+        specifier: 12.0.0-alpha.7
+        version: 12.0.0-alpha.7
       rescript-schema:
         specifier: 'link:'
         version: 'link:'
@@ -48,53 +45,8 @@ importers:
         specifier: 3.24.1
         version: 3.24.1
 
-  packages/artifacts:
-    devDependencies:
-      '@dzakh/rescript-ava':
-        specifier: 2.3.0
-        version: 2.3.0(ava@5.2.0)(rescript@11.1.0)
-      '@rescript/core':
-        specifier: 1.5.2
-        version: 1.5.2(rescript@11.1.0)
-      ava:
-        specifier: 5.2.0
-        version: 5.2.0
-      benchmark:
-        specifier: 2.1.4
-        version: 2.1.4
-      c8:
-        specifier: 7.12.0
-        version: 7.12.0
-      rescript:
-        specifier: 11.1.0
-        version: 11.1.0
-      rescript-schema:
-        specifier: 'link:'
-        version: 'link:'
-      rescript-stdlib-vendorer:
-        specifier: 1.1.0
-        version: 1.1.0
-      ts-expect:
-        specifier: 1.3.0
-        version: 1.3.0
-      ts-node:
-        specifier: 10.9.1
-        version: 10.9.1(@types/node@20.11.16)(typescript@4.9.3)
-      typescript:
-        specifier: 4.9.3
-        version: 4.9.3
-      valibot:
-        specifier: 0.36.0
-        version: 0.36.0
-      zod:
-        specifier: 3.23.8
-        version: 3.23.8
-
   packages/prepack:
     dependencies:
-      '@rescript/core':
-        specifier: 1.3.0
-        version: 1.3.0(rescript@11.1.0)
       '@rollup/plugin-replace':
         specifier: 5.0.2
         version: 5.0.2(rollup@3.21.0)
@@ -102,8 +54,8 @@ importers:
         specifier: 7.1.1
         version: 7.1.1
       rescript:
-        specifier: 11.1.0
-        version: 11.1.0
+        specifier: 12.0.0-alpha.7
+        version: 12.0.0-alpha.7
       rescript-nodejs:
         specifier: 16.1.0
         version: 16.1.0
@@ -118,7 +70,7 @@ importers:
     dependencies:
       rescript-schema:
         specifier: ^9.0.0 || 9.0.0-rc.1 || 9.0.0-rc.2
-        version: 9.0.0-rc.1(rescript@11.1.0)
+        version: 9.0.0-rc.1(rescript@12.0.0-alpha.7)
 
   packages/tests: {}
 
@@ -126,10 +78,6 @@ packages:
 
   '@bcoe/v8-coverage@0.2.3':
     resolution: {integrity: sha512-0hYQ8SB4Db5zvZB4axdMHGwEaQjkZzFjQiN9LVYvIFB2nSUHW9tYpxWriPrWDASIxiaXax83REcLxuSdnGPZtw==}
-
-  '@cspotcode/source-map-support@0.8.1':
-    resolution: {integrity: sha512-IchNf6dN4tHoMFIn/7OE8LWZ19Y6q/67Bmf6vnGREv8RSbBVb9LPJxEcnwrcwX6ixSvaiGoomAUvu4YSxXrVgw==}
-    engines: {node: '>=12'}
 
   '@dzakh/rescript-ava@2.3.0':
     resolution: {integrity: sha512-str7Fh+lYxWNf+wDAHykw84bqKodrwU5swLcYNjc8BJc3N4ECyNBA3o5vFNsq0zZw+1eExARs8mUnB2ZQSmRGg==}
@@ -155,10 +103,6 @@ packages:
     resolution: {integrity: sha512-F2msla3tad+Mfht5cJq7LSXcdudKTWCVYUgw6pLFOOHSTtZlj6SWNYAp+AhuqLmWdBO2X5hPrLcu8cVP8fy28w==}
     engines: {node: '>=6.0.0'}
 
-  '@jridgewell/resolve-uri@3.1.1':
-    resolution: {integrity: sha512-dSYZh7HhCDtCKm4QakX0xFpsRDqjjtZf/kjI/v3T3Nwt5r8/qz/M19F9ySyOqU94SXBmeG9ttTul+YnR4LOxFA==}
-    engines: {node: '>=6.0.0'}
-
   '@jridgewell/sourcemap-codec@1.4.14':
     resolution: {integrity: sha512-XPSJHWmi394fuUuzDnGz1wiKqWfo1yXecHQMRf2l6hztTO+nPru658AyDngaBe7isIxEkRsPR3FZh+s7iVa4Uw==}
 
@@ -167,9 +111,6 @@ packages:
 
   '@jridgewell/trace-mapping@0.3.18':
     resolution: {integrity: sha512-w+niJYzMHdd7USdiH2U6869nqhD2nbfZXND5Yp93qIbEmnDNk7PD48o+YchRVpzMU7M6jVCbenTR7PA1FLQ9pA==}
-
-  '@jridgewell/trace-mapping@0.3.9':
-    resolution: {integrity: sha512-3Belt6tdc8bPgAtbcmdtNJlirVoTmEb5e2gC94PnkwEW9jI6CAHUeoG85tjWP5WquqfavoMtMwiG4P926ZKKuQ==}
 
   '@nodelib/fs.scandir@2.1.5':
     resolution: {integrity: sha512-vq24Bq3ym5HEQm2NKCr3yXDwjc7vTsEThRDnkp2DK9p1uqLR+DHurm/NOTo0KG7HYHU7eppKZj3MyqYuMBf62g==}
@@ -186,16 +127,6 @@ packages:
   '@pkgjs/parseargs@0.11.0':
     resolution: {integrity: sha512-+1VkjdD0QBLPodGrJUeqarH8VAIvQODIbwh9XpP5Syisf7YoQgsJKPNFoqqLQlu+VQ/tVSshMR6loPMn8U+dPg==}
     engines: {node: '>=14'}
-
-  '@rescript/core@1.3.0':
-    resolution: {integrity: sha512-wNZOZ63sYcaIYZCmTZeIPCeLa3HCGgPbIOR8zjyNkoBYUlxNV8Nb2ZyqlXR5Mb9ttvv8fTV56JbKhyVEZEYo8g==}
-    peerDependencies:
-      rescript: ^11.1.0-rc.7
-
-  '@rescript/core@1.5.2':
-    resolution: {integrity: sha512-VWRFHrQu8hWnd9Y9LYZ8kig2urybhZlDVGy5u50bqf2WCRAeysBIfxK8eN4VlpQT38igMo0/uLX1KSpwCVMYGw==}
-    peerDependencies:
-      rescript: ^11.1.0-rc.7
 
   '@rollup/plugin-replace@5.0.2':
     resolution: {integrity: sha512-M9YXNekv/C/iHHK+cvORzfRYfPbq0RDD8r0G+bMiTXjNGKulPnCT9O3Ss46WfhI6ZOCgApOP7xAdmCQJ+U2LAA==}
@@ -215,30 +146,11 @@ packages:
       rollup:
         optional: true
 
-  '@tsconfig/node10@1.0.9':
-    resolution: {integrity: sha512-jNsYVVxU8v5g43Erja32laIDHXeoNvFEpX33OK4d6hljo3jDhCBDhx5dhCCTMWUojscpAagGiRkBKxpdl9fxqA==}
-
-  '@tsconfig/node12@1.0.11':
-    resolution: {integrity: sha512-cqefuRsh12pWyGsIoBKJA9luFu3mRxCA+ORZvA4ktLSzIuCUtWVxGIuXigEwO5/ywWFMZ2QEGKWvkZG1zDMTag==}
-
-  '@tsconfig/node14@1.0.3':
-    resolution: {integrity: sha512-ysT8mhdixWK6Hw3i1V2AeRqZ5WfXg1G43mqoYlM2nc6388Fq5jcXyr5mRsqViLx/GJYdoL0bfXD8nmF+Zn/Iow==}
-
-  '@tsconfig/node16@1.0.4':
-    resolution: {integrity: sha512-vxhUy4J8lyeyinH7Azl1pdd43GJhZH/tP2weN8TntQblOY+A0XbT8DJk1/oCPuOOyg/Ja757rG0CgHcWC8OfMA==}
-
   '@types/estree@1.0.1':
     resolution: {integrity: sha512-LG4opVs2ANWZ1TJoKc937iMmNstM/d0ae1vNbnBvBhqCSezgVUOzcLCqbI5elV8Vy6WKwKjaqR+zO9VKirBBCA==}
 
   '@types/istanbul-lib-coverage@2.0.4':
     resolution: {integrity: sha512-z/QT1XN4K4KYuslS23k62yDIDLwLFkzxOuMplDtObz0+y7VqJCaO2o+SPwHCvLFZh7xazvvoor2tA/hPz9ee7g==}
-
-  '@types/node@20.11.16':
-    resolution: {integrity: sha512-gKb0enTmRCzXSSUJDq6/sPcqrfCv2mkkG6Jt/clpn5eiCbKTY+SgZUxo+p8ZKMof5dCp9vHQUAB7wOUTod22wQ==}
-
-  acorn-walk@8.2.0:
-    resolution: {integrity: sha512-k+iyHEuPgSw6SbuDpGQM+06HQUa04DZ3o+F6CSzXMvvI5KMvnaEqXe+YVe555R9nn6GPt404fos4wcgpw12SDA==}
-    engines: {node: '>=0.4.0'}
 
   acorn-walk@8.3.4:
     resolution: {integrity: sha512-ueEepnujpqee2o5aIYnvHU6C0A42MNdsIDeqy5BydrkuC5R1ZuUFnm27EeFJGoEHJQgn3uleRvmTXaJgfXbt4g==}
@@ -246,11 +158,6 @@ packages:
 
   acorn@8.14.0:
     resolution: {integrity: sha512-cl669nCJTZBsL97OF4kUQm5g5hC2uihk0NxY3WENAC0TYdILVkAyHymAntgxGkl7K+t0cXIrH5siy5S4XkFycA==}
-    engines: {node: '>=0.4.0'}
-    hasBin: true
-
-  acorn@8.9.0:
-    resolution: {integrity: sha512-jaVNAFBHNLXspO543WnNNPZFRtavh3skAkITqD0/2aeMkKZTN+254PyhwxFYrk3vQ1xfY+2wbesJMs/JC8/PwQ==}
     engines: {node: '>=0.4.0'}
     hasBin: true
 
@@ -277,9 +184,6 @@ packages:
   anymatch@3.1.3:
     resolution: {integrity: sha512-KMReFUr0B4t+D+OBkjR3KYqvocp2XaSzO55UcB6mgQMd3KbcE+mWTyvVV7D/zsdEbNnV6acZUutkiHQXvTr1Rw==}
     engines: {node: '>= 8'}
-
-  arg@4.1.3:
-    resolution: {integrity: sha512-58S9QDqG0Xx27YwPSt9fJxivjYl432YCwfDMfZ+71RAqUrZef7LrKQZ3LHLOwCS4FLNBplP533Zx895SeOCHvA==}
 
   argparse@1.0.10:
     resolution: {integrity: sha512-o5Roy6tNG4SL/FOkCAN6RzjiakZS25RLYFrcMttJqbdd8BWrnA+fGz57iN5Pb06pvBGvl5gQ0B48dJlslXvoTg==}
@@ -410,9 +314,6 @@ packages:
     resolution: {integrity: sha512-rcQ1bsQO9799wq24uE5AM2tAILy4gXGIK/njFWcVQkGNZ96edlpY+A7bjwvzjYvLDyzmG1MmMLZhpcsb+klNMQ==}
     engines: {node: ^12.20.0 || ^14.13.1 || >=16.0.0}
 
-  create-require@1.1.1:
-    resolution: {integrity: sha512-dcKFX3jn0MpIaXjisoRvexIJVEKzaq7z2rZKxf+MSr9TkdmHmsU4m2lcLojrj/FHl8mk5VxMmYA+ftRkP/3oKQ==}
-
   cross-spawn@7.0.3:
     resolution: {integrity: sha512-iRDPJKUPVEND7dHPO8rkbOnPpyDygcDFtWjpeWNCgy8WP2rXcxXL8TskReQl6OrB2G7+UJrags1q15Fudc7G6w==}
     engines: {node: '>= 8'}
@@ -437,10 +338,6 @@ packages:
   del@7.0.0:
     resolution: {integrity: sha512-tQbV/4u5WVB8HMJr08pgw0b6nG4RGt/tj+7Numvq+zqcvUFeMaIWWOUFltiU+6go8BSO2/ogsB4EasDaj0y68Q==}
     engines: {node: '>=14.16'}
-
-  diff@4.0.2:
-    resolution: {integrity: sha512-58lmxKSA4BNyLz+HHMUzlOEpg09FV+ev6ZMe3vJihgdxzgcwZ8VoEEPmALCZG9LmqfVoNMMKpttIYTVG6uDY7A==}
-    engines: {node: '>=0.3.1'}
 
   dir-glob@3.0.1:
     resolution: {integrity: sha512-WkrWp9GR4KXfKGYzOLmTuGVi1UWFfws377n9cc55/tb6DuqyF6pcQ5AbiHEshaDpY9v6oaSr2XCDidGmMwdzIA==}
@@ -711,9 +608,6 @@ packages:
     resolution: {integrity: sha512-g3FeP20LNwhALb/6Cz6Dd4F2ngze0jz7tbzrD2wAV+o9FeNHe4rL+yK2md0J/fiSf1sa1ADhXqi5+oVwOM/eGw==}
     engines: {node: '>=8'}
 
-  make-error@1.3.6:
-    resolution: {integrity: sha512-s8UhlNe7vPKomQhC1qFelMokr/Sc3AgNbso3n74mVPA5LTZwkB9NlXf4XPamLxJE8h0gh73rM94xvwRT2CVInw==}
-
   map-age-cleaner@0.1.3:
     resolution: {integrity: sha512-bJzx6nMoP6PDLPBFmg7+xRKeFZvFboMrGlxmNj9ClvX53KrmvM5bXFXEWjbz4cz1AFn+jWJ9z/DJSz7hrs0w3w==}
     engines: {node: '>=6'}
@@ -917,9 +811,9 @@ packages:
     engines: {node: '>=10'}
     hasBin: true
 
-  rescript@11.1.0:
-    resolution: {integrity: sha512-9la2Dv+ACylQ77I8s4spPu1JnLZXbH5WgxcLHLLUBWgFFSiv0wXqgzWztrBIZqwFgVX5BYcwldUqUVcEzdCyHg==}
-    engines: {node: '>=10'}
+  rescript@12.0.0-alpha.7:
+    resolution: {integrity: sha512-d/HV1k+e8aXFm1NDBRdL5rmUGRjVMeJW/maYBJFNgi95hGyGjrEltitTMMxpow/R0lxhC70VKrJTRtFr7Mowjw==}
+    engines: {node: '>=18'}
     hasBin: true
 
   resolve-cwd@3.0.0:
@@ -1060,20 +954,6 @@ packages:
   ts-expect@1.3.0:
     resolution: {integrity: sha512-e4g0EJtAjk64xgnFPD6kTBUtpnMVzDrMb12N1YZV0VvSlhnVT3SGxiYTLdGy8Q5cYHOIC/FAHmZ10eGrAguicQ==}
 
-  ts-node@10.9.1:
-    resolution: {integrity: sha512-NtVysVPkxxrwFGUUxGYhfux8k78pQB3JqYBXlLRZgdGUqTO5wU/UyHop5p70iEbGhB7q5KmiZiU0Y3KlJrScEw==}
-    hasBin: true
-    peerDependencies:
-      '@swc/core': '>=1.2.50'
-      '@swc/wasm': '>=1.2.50'
-      '@types/node': '*'
-      typescript: '>=2.7'
-    peerDependenciesMeta:
-      '@swc/core':
-        optional: true
-      '@swc/wasm':
-        optional: true
-
   tsimp@2.0.12:
     resolution: {integrity: sha512-0XbhMfDB1BlN4iuheUaCUVB2iAjWb9z6Ik/6WcxREc4MhjYmkScK+CRNf34wkDO8wMvmFBb0lYdrd8H44g9yjg==}
     engines: {node: 16 >=16.17.0 || 18 >= 18.6.0 || >=20}
@@ -1090,18 +970,9 @@ packages:
     engines: {node: '>=4.2.0'}
     hasBin: true
 
-  undici-types@5.26.5:
-    resolution: {integrity: sha512-JlCMO+ehdEIKqlFxk6IfVoAUVmgz7cU7zD/h9XZ0qzeosSHmUJVOzSQvvYSYWXkFXC+IfLKSIffhv0sVZup6pA==}
-
-  v8-compile-cache-lib@3.0.1:
-    resolution: {integrity: sha512-wa7YjyUGfNZngI/vtK0UHAN+lgDCxBPCylVXGp0zu59Fz5aiGtNXaq3DhIov063MorB+VfufLh3JlF2KdTK3xg==}
-
   v8-to-istanbul@9.1.0:
     resolution: {integrity: sha512-6z3GW9x8G1gd+JIIgQQQxXuiJtCXeAjp6RaPEPLv62mH3iPHPxV6W3robxtCzNErRo6ZwTmzWhsbNvjyEBKzKA==}
     engines: {node: '>=10.12.0'}
-
-  valibot@0.36.0:
-    resolution: {integrity: sha512-CjF1XN4sUce8sBK9TixrDqFM7RwNkuXdJu174/AwmQUB62QbCQADg5lLe8ldBalFgtj1uKj+pKwDJiNo4Mn+eQ==}
 
   valibot@0.42.1:
     resolution: {integrity: sha512-3keXV29Ar5b//Hqi4MbSdV7lfVp6zuYLZuA9V1PvQUsXqogr+u5lvLPLk3A4f74VUXDnf/JfWMN6sB+koJ/FFw==}
@@ -1162,10 +1033,6 @@ packages:
     resolution: {integrity: sha512-7dSzzRQ++CKnNI/krKnYRV7JKKPUXMEh61soaHKg9mrWEhzFWhFnxPxGl+69cD1Ou63C13NUPCnmIcrvqCuM6w==}
     engines: {node: '>=12'}
 
-  yn@3.1.1:
-    resolution: {integrity: sha512-Ux4ygGWsu2c7isFWe8Yu1YluJmqVhxqK2cLXNQA5AcC3QfbGNpM7fu0Y8b/z16pXLnFxZYvWhd3fhBY9DLmC6Q==}
-    engines: {node: '>=6'}
-
   yocto-queue@0.1.0:
     resolution: {integrity: sha512-rVksvsnNCdJ/ohGc6xgPwyN8eheCxsiLM8mxuE/t/mOVqJewPuO1miLpTHQiRgTKCLexL4MeAFVagts7HmNZ2Q==}
     engines: {node: '>=10'}
@@ -1174,9 +1041,6 @@ packages:
     resolution: {integrity: sha512-9bnSc/HEW2uRy67wc+T8UwauLuPJVn28jb+GtJY16iiKWyvmYJRXVT4UamsAEGQfPohgr2q4Tq0sQbQlxTfi1g==}
     engines: {node: '>=12.20'}
 
-  zod@3.23.8:
-    resolution: {integrity: sha512-XBx9AXhXktjUqnepgTiE5flcKIYWi/rme0Eaj+5Y0lftuGBq+jyRu/md4WnuxqgP1ubdpNCsYEYPxrzVHD8d6g==}
-
   zod@3.24.1:
     resolution: {integrity: sha512-muH7gBL9sI1nciMZV67X5fTKKBLtwpZ5VBp1vsOQzj1MhrBZ4wlVCm3gedKZWLp0Oyel8sIGfeiz54Su+OVT+A==}
 
@@ -1184,14 +1048,10 @@ snapshots:
 
   '@bcoe/v8-coverage@0.2.3': {}
 
-  '@cspotcode/source-map-support@0.8.1':
-    dependencies:
-      '@jridgewell/trace-mapping': 0.3.9
-
-  '@dzakh/rescript-ava@2.3.0(ava@5.2.0)(rescript@11.1.0)':
+  '@dzakh/rescript-ava@2.3.0(ava@5.2.0)(rescript@12.0.0-alpha.7)':
     dependencies:
       ava: 5.2.0
-      rescript: 11.1.0
+      rescript: 12.0.0-alpha.7
 
   '@isaacs/cached@1.0.1':
     dependencies:
@@ -1212,8 +1072,6 @@ snapshots:
 
   '@jridgewell/resolve-uri@3.1.0': {}
 
-  '@jridgewell/resolve-uri@3.1.1': {}
-
   '@jridgewell/sourcemap-codec@1.4.14': {}
 
   '@jridgewell/sourcemap-codec@1.4.15': {}
@@ -1222,11 +1080,6 @@ snapshots:
     dependencies:
       '@jridgewell/resolve-uri': 3.1.0
       '@jridgewell/sourcemap-codec': 1.4.14
-
-  '@jridgewell/trace-mapping@0.3.9':
-    dependencies:
-      '@jridgewell/resolve-uri': 3.1.1
-      '@jridgewell/sourcemap-codec': 1.4.15
 
   '@nodelib/fs.scandir@2.1.5':
     dependencies:
@@ -1243,14 +1096,6 @@ snapshots:
   '@pkgjs/parseargs@0.11.0':
     optional: true
 
-  '@rescript/core@1.3.0(rescript@11.1.0)':
-    dependencies:
-      rescript: 11.1.0
-
-  '@rescript/core@1.5.2(rescript@11.1.0)':
-    dependencies:
-      rescript: 11.1.0
-
   '@rollup/plugin-replace@5.0.2(rollup@3.21.0)':
     dependencies:
       '@rollup/pluginutils': 5.0.2(rollup@3.21.0)
@@ -1266,31 +1111,15 @@ snapshots:
     optionalDependencies:
       rollup: 3.21.0
 
-  '@tsconfig/node10@1.0.9': {}
-
-  '@tsconfig/node12@1.0.11': {}
-
-  '@tsconfig/node14@1.0.3': {}
-
-  '@tsconfig/node16@1.0.4': {}
-
   '@types/estree@1.0.1': {}
 
   '@types/istanbul-lib-coverage@2.0.4': {}
-
-  '@types/node@20.11.16':
-    dependencies:
-      undici-types: 5.26.5
-
-  acorn-walk@8.2.0: {}
 
   acorn-walk@8.3.4:
     dependencies:
       acorn: 8.14.0
 
   acorn@8.14.0: {}
-
-  acorn@8.9.0: {}
 
   aggregate-error@4.0.1:
     dependencies:
@@ -1311,8 +1140,6 @@ snapshots:
     dependencies:
       normalize-path: 3.0.0
       picomatch: 2.3.1
-
-  arg@4.1.3: {}
 
   argparse@1.0.10:
     dependencies:
@@ -1493,8 +1320,6 @@ snapshots:
 
   convert-to-spaces@2.0.1: {}
 
-  create-require@1.1.1: {}
-
   cross-spawn@7.0.3:
     dependencies:
       path-key: 3.1.1
@@ -1523,8 +1348,6 @@ snapshots:
       p-map: 5.5.0
       rimraf: 3.0.2
       slash: 4.0.0
-
-  diff@4.0.2: {}
 
   dir-glob@3.0.1:
     dependencies:
@@ -1768,8 +1591,6 @@ snapshots:
     dependencies:
       semver: 6.3.0
 
-  make-error@1.3.6: {}
-
   map-age-cleaner@0.1.3:
     dependencies:
       p-defer: 1.0.0
@@ -1917,9 +1738,9 @@ snapshots:
 
   rescript-nodejs@16.1.0: {}
 
-  rescript-schema@9.0.0-rc.1(rescript@11.1.0):
+  rescript-schema@9.0.0-rc.1(rescript@12.0.0-alpha.7):
     dependencies:
-      rescript: 11.1.0
+      rescript: 12.0.0-alpha.7
 
   rescript-stdlib-vendorer@1.1.0:
     dependencies:
@@ -1934,7 +1755,7 @@ snapshots:
 
   rescript@11.0.1: {}
 
-  rescript@11.1.0: {}
+  rescript@12.0.0-alpha.7: {}
 
   resolve-cwd@3.0.0:
     dependencies:
@@ -2059,24 +1880,6 @@ snapshots:
 
   ts-expect@1.3.0: {}
 
-  ts-node@10.9.1(@types/node@20.11.16)(typescript@4.9.3):
-    dependencies:
-      '@cspotcode/source-map-support': 0.8.1
-      '@tsconfig/node10': 1.0.9
-      '@tsconfig/node12': 1.0.11
-      '@tsconfig/node14': 1.0.3
-      '@tsconfig/node16': 1.0.4
-      '@types/node': 20.11.16
-      acorn: 8.9.0
-      acorn-walk: 8.2.0
-      arg: 4.1.3
-      create-require: 1.1.1
-      diff: 4.0.2
-      make-error: 1.3.6
-      typescript: 4.9.3
-      v8-compile-cache-lib: 3.0.1
-      yn: 3.1.1
-
   tsimp@2.0.12(typescript@4.9.3):
     dependencies:
       '@isaacs/cached': 1.0.1
@@ -2094,17 +1897,11 @@ snapshots:
 
   typescript@4.9.3: {}
 
-  undici-types@5.26.5: {}
-
-  v8-compile-cache-lib@3.0.1: {}
-
   v8-to-istanbul@9.1.0:
     dependencies:
       '@jridgewell/trace-mapping': 0.3.18
       '@types/istanbul-lib-coverage': 2.0.4
       convert-source-map: 1.9.0
-
-  valibot@0.36.0: {}
 
   valibot@0.42.1(typescript@4.9.3):
     optionalDependencies:
@@ -2165,12 +1962,8 @@ snapshots:
       y18n: 5.0.8
       yargs-parser: 21.1.1
 
-  yn@3.1.1: {}
-
   yocto-queue@0.1.0: {}
 
   yocto-queue@1.0.0: {}
-
-  zod@3.23.8: {}
 
   zod@3.24.1: {}

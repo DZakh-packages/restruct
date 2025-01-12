@@ -11,29 +11,24 @@ let sourePaths = [
 let jsInputPath = NodeJs.Path.join2(artifactsPath, "src/S.js")
 
 module Stdlib = {
-  module Dict = {
-    @val
-    external copy: (@as(json`{}`) _, dict<'a>) => dict<'a> = "Object.assign"
-  }
-
   module Json = {
     let rec update = (json, path, value) => {
       let dict = switch json->JSON.Decode.object {
       | Some(dict) => dict->Dict.copy
-      | None => RescriptCore.Dict.make()
+      | None => Dict.make()
       }
       switch path {
       | list{} => value
       | list{key} => {
-          dict->RescriptCore.Dict.set(key, value)
+          dict->Dict.set(key, value)
           dict->JSON.Encode.object
         }
       | list{key, ...path} => {
-          dict->RescriptCore.Dict.set(
+          dict->Dict.set(
             key,
             dict
-            ->RescriptCore.Dict.get(key)
-            ->Option.getOr(RescriptCore.Dict.make()->JSON.Encode.object)
+            ->Dict.get(key)
+            ->Option.getOr(Dict.make()->JSON.Encode.object)
             ->update(path, value),
           )
           dict->JSON.Encode.object
@@ -76,7 +71,7 @@ module Rollup = {
     type t = {
       input?: string,
       @as("external")
-      external_?: array<Re.t>,
+      external_?: array<RegExp.t>,
     }
   }
 
@@ -144,7 +139,7 @@ let updateJsonFile = (~src, ~path, ~value) => {
 
 let _ = Execa.sync("npm", ["run", "res:build"], ~options={cwd: artifactsPath}, ())
 
-let bundle = await Rollup.Bundle.make({input: jsInputPath, external_: [%re("/S_Core\.bs\.mjs/")]})
+let bundle = await Rollup.Bundle.make({input: jsInputPath, external_: [/S_Core\.bs\.mjs/]})
 let output: array<Rollup.OutputOptions.t> = [
   {
     file: NodeJs.Path.join2(artifactsPath, "dist/S.js"),

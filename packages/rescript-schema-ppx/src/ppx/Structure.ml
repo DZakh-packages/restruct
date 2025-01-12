@@ -54,7 +54,7 @@ and generatePolyvariantSchemaExpression row_fields =
 
 and generateFieldSchemaExpression field =
   let schema_expression = generateCoreTypeSchemaExpression field.core_type in
-  if field.is_optional then [%expr Obj.magic S.option [%e schema_expression]]
+  if field.is_optional then [%expr Obj.magic (S.option [%e schema_expression])]
   else schema_expression
 
 and generateVariantSchemaExpression constr_decls =

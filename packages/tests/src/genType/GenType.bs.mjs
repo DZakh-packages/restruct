@@ -3,19 +3,19 @@
 import * as U from "../utils/U.bs.mjs";
 import * as S$RescriptSchema from "rescript-schema/src/S.bs.mjs";
 
-var error = U.error({
-      operation: "Parse",
-      code: {
-        TAG: "OperationFailed",
-        _0: "Something went wrong"
-      },
-      path: S$RescriptSchema.Path.empty
-    });
+let error = U.error({
+  operation: "Parse",
+  code: {
+    TAG: "OperationFailed",
+    _0: "Something went wrong"
+  },
+  path: S$RescriptSchema.Path.empty
+});
 
-var stringSchema = S$RescriptSchema.string;
+let stringSchema = S$RescriptSchema.string;
 
 export {
-  stringSchema ,
-  error ,
+  stringSchema,
+  error,
 }
 /* error Not a pure module */
